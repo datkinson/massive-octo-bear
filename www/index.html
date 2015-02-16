@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/topcoat.css" />
+        <title>Bluetooth Devices</title>
+    </head>
+    <body>
+      <div class="topcoat-navigation-bar">
+          <div class="topcoat-navigation-bar__item center full">
+              <h1 class="topcoat-navigation-bar__title">Bastet Helper</h1>
+          </div>
+      </div>
+      <label class="topcoat-switch">
+        <input type="checkbox" class="topcoat-switch__input">
+        <div class="topcoat-switch__toggle"></div>
+      </label>
+
+
+      <div class="topcoat-list">
+        <h3 class="topcoat-list__header">Devices</h3>
+        <ul class="topcoat-list__container" id="devices">
+          <li class="topcoat-list__item">
+            Devices will be listed here
+          </li>
+        </ul>
+      </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
