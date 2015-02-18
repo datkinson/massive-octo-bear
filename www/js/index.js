@@ -2,13 +2,13 @@ var params = {"request": true, "statusReciever": false};
 var devices = [];
 function initialiseSuccess(response) {
 	console.log(response);
-	alert("Bluetooth Service "+response.status);
+	document.getElementById("status").innerHTML = "Bluetooth service "+response.status;
 	bluetoothle.startScan(scanSuccess, scanError);
 }
 
 function initialiseError(response) {
 	console.log(response);
-	alert("Error initialising bluetooth service "+response.status);
+	document.getElementById("status").innerHTML = "Error Bluetooth service "+response.status;
 }
 
 function scanSuccess(response) {
